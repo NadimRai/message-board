@@ -11,7 +11,15 @@
 	            	{{#link-to 'about'}}Return to Question Page{{/link-to}}
 	            </span>
 	            <br><br>
-	            <button class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Answer</button>
+	            
+              
+              <ul>
+                {{#each model.answers as |answer|}}
+                  <li>{{answer.content}} - {{answer.author}} </li>
+                {{/each}}
+            </ul>
+              {{new-answer saveAnswer="saveAnswer" question=model}}
+              
          	</div><!-- /.blog-post -->
         </div><!-- /.blog-main -->
 
