@@ -1,0 +1,11 @@
+{ "questions": [{
+    "content":  "What are twin prime numbers?",
+    "author": "Issac Wong" 
+  }, {
+    "content": "Who invented phonograph?",
+    "author": "Brian Law"
+  }, {
+    "content": "Who is father of AI?",
+    "author": "Rocky"  
+  }]
+}
