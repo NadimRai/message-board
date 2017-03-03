@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 /***** Index hbs *********/
 .bg{
@@ -127,4 +129,24 @@
 /******* About hbs *********************/
 .modal-style{
   margin-top: 8px;
+}
+
+/********* Question-detail *****************/
+.question-detail{
+  margin-top: 20px;
+}
+
+.help-content{
+  font-size: 23px;
+  font-family: 'Ranga', cursive;
+}
+
+.return-content{
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+.blog-sidebar{
+  background-color: #eee;
+  font-size: 16px;
 }
