@@ -11,9 +11,8 @@
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
       </ul>
-      <form class="navbar-form navbar-left">
-        <button type="submit" class="btn btn-primary">Ask Question</button>
-      </form>
+      {{new-question saveQuestion2="saveQuestion3"}}
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -22,7 +21,7 @@
 	<div class="row">
 	  {{#each model as |question|}}
 	    <div class="col-md-4">
-	      <div class="panel panel-default library-item">
+	      <div class="panel panel-default">
 	        <div class="panel-heading">
 	          <h3 class="panel-title">Got Question?</h3>
 	        </div>
