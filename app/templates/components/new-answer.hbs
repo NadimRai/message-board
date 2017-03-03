@@ -1,0 +1,7 @@
+{{#if addNewAnswer}}
+  {{input value=content  placeholder="Answer"}}
+  {{input value=author placeholder="Author"}}
+  <button {{action 'saveAnswer'}} >Save</button>
+{{else}}
+  <button {{action 'AnswerFormShow'}}>Add Answer</button>
+{{/if}}
