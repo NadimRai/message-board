@@ -2,23 +2,36 @@
 	<div class="row">
 		<div class="col-md-8 blog-main">
 			<div class="blog-post">
-	            <h2 class="blog-post-title">{{model.content}}</h2>
-	            <p class="blog-post-meta"><h4>Asked by: {{model.author}}</h4></p>
-	            <div class="help-content">
-		            (Can you help {{model.author}} to answer a question?)<br>
-	            </div>
-	            <span class="return-content">
+	      <h2 class="blog-post-title">{{model.content}}</h2>
+	        <p class="blog-post-meta"><h4>Asked by: {{model.author}}</h4></p>
+            <div class="help-content">
+	            (Can you help {{model.author}} to answer a question?)<br>
+            </div>
+	           <span class="return-content">
 	            	{{#link-to 'about'}}Return to Question Page{{/link-to}}
-	            </span>
-	            <br><br>
-	            
-              
-              <ul>
+	           </span>
+	           <br>
+              <br>
+              <hr>
+              <hr>
+            <div class="container">
+              <div class="row">
                 {{#each model.answers as |answer|}}
-                  <li>{{answer.content}} - {{answer.author}} </li>
+                  <div class="col-md-8">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Answer: - {{answer.content}}</h3>
+                      </div>
+                      <div class="panel-body">
+                        Answered by - {{answer.author}} 
+                      </div>
+                    </div>
+                  </div>
                 {{/each}}
-            </ul>
-              {{new-answer saveAnswer="saveAnswer" question=model}}
+              </div>
+            </div>
+            
+            {{new-answer saveAnswer="saveAnswer" question=model}}
               
          	</div><!-- /.blog-post -->
         </div><!-- /.blog-main -->
@@ -52,8 +65,7 @@
               <li><a href="#">Twitter</a></li>
               <li><a href="#">Facebook</a></li>
             </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
+      </div>
+    </div><!-- /.blog-sidebar -->
+  </div><!-- /.row -->
 </div><!-- /.container -->

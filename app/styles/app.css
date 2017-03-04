@@ -37,6 +37,11 @@
   font-size: 22px;
 }
 
+.txt{
+  font-size: 32px;
+  font-family: 'Lobster', cursive;
+  color: #f63;
+}
 /******** Animate **********************/
 .animated {
   -webkit-animation-duration: 1s;
